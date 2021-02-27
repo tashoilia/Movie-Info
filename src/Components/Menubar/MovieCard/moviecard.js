@@ -31,7 +31,6 @@ export default function Moviecard({ movies }) {
   const removeFromFavourites = (movie) => {
     var entryState = [...entry];
     var index = entryState.findIndex((a) => a.id == movie.id);
-    console.log(index);
     entryState.splice(index, 1);
     setEntry(entryState);
     localStorage.setItem("favouriteMovie", JSON.stringify(entryState));
