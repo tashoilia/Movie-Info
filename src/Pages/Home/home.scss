@@ -1,0 +1,30 @@
+.home-wrapper {
+    background-color: #111111;
+    height: 100%;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+
+    .sub-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: rgba(2, 100, 112, 0.63);
+        color: #00ACC1;
+        border-radius: 7px;
+        font-size: 1.4em;
+        margin: 2.2rem 0; 
+    }
+
+    .cards-wrapper {
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    
+}

@@ -1,0 +1,15 @@
+.favourites-wrapper {
+    background-color: #111111;
+    height: 100%;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+
+    .cards-wrapper {
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
