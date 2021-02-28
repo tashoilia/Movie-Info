@@ -1,9 +1,12 @@
 import React, {useEffect,useState} from 'react'
 import './home.scss'
-import Menubar from '../../Components/Menubar/menubar'
+import Menubar from '../../Menubar/menubar'
 import { InfoCircleOutlined } from '@ant-design/icons'
 import axios from 'axios'
-import Moviecard from '../../Components/Menubar/MovieCard/moviecard'
+import Moviecard from '../../Components/MovieCard/moviecard'
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import movie_loader from "../../Assets/movie_loader.json"
+
 
 export default function Home({history}) {
     const [movies,setMovies] = useState([])
@@ -20,16 +23,22 @@ export default function Home({history}) {
         })
 
     },[])
+    
     return (
         <div className='home-wrapper'>
             <Menubar history={history}/>
             <div className='sub-header'>
-            <InfoCircleOutlined />
+            <InfoCircleOutlined style={{fontSize: "15px", marginRight:"10px"}}/>
                 Today movies only for you
             </div>
-            <div className='cards-wrapper'>
-                { loading ? <h1>Loading</h1> :  <Moviecard movies={movies}/> }
+            { loading ? <Player
+                autoplay
+                loop
+                src={movie_loader}  
+                style={{ height: '300px', width: '300px' }}
+                >
+                </Player> :  <div className='cards-wrapper'><Moviecard movies={movies} history={history} /></div> }
                 </div> 
-            </div>
+            
     )
 }

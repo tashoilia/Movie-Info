@@ -1,4 +1,9 @@
 .App {
   margin: 0;
   padding: 0;
+  
+}
+
+body {
+  background-color: #022125 !important;
 }

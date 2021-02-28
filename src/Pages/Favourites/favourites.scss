@@ -1,9 +1,13 @@
 .favourites-wrapper {
-    background-color: #111111;
+    background-color: #022125;
     height: 100%;
     padding: 3rem 6rem;
     display: flex;
     flex-direction: column;
+
+    h1 {
+        color: #fff;
+    }
 
     .cards-wrapper {
         height: auto;
@@ -11,5 +15,6 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: 20px;
     }
 }
