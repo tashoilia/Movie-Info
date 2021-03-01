@@ -5,6 +5,12 @@
     justify-content: space-between;
     align-items: center;
 
+    img {
+        width: 200px;
+        height: auto;
+        cursor: pointer;
+    }
+
     h2, h4 {
         cursor: pointer;
         margin-bottom: 0;
@@ -17,7 +23,7 @@
 
     h4 {
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.1rem;
 
         &:hover {
             color: #F5C518;

@@ -14,7 +14,7 @@
         background-color: rgba(2, 100, 112, 0.63);
         color: #00ACC1;
         border-radius: 7px;
-        font-size: 15px;
+        font-size: 17px;
         margin: 2.5rem 0 1.5rem; 
         -webkit-animation: flickerAnimation 1s infinite;
         -moz-animation: flickerAnimation 4s infinite;
@@ -23,10 +23,10 @@
     }
 
     .cards-wrapper {
-        width: auto;
+        width: 100%;
         height: auto;
         display: flex;
-        justify-content: flex-start;
+        gap: 2.4rem;
         flex-wrap: wrap;
     }
     
